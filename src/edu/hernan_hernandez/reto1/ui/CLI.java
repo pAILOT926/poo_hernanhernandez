@@ -12,6 +12,7 @@ public class CLI {
         System.out.println("1. Indice de masa corporal");
         System.out.println("2. Masa corporal magra");
         System.out.println("3. Metabolismo basal");
+        System.out.println("4. Salir");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -87,6 +88,11 @@ public class CLI {
                                 System.out.println("imm: " + imm);
                             }
                             break;
+
+                            //Salir de la aplicacion
+            case 4:
+                System.exit(0);
+                break;
         }
     }
 }
