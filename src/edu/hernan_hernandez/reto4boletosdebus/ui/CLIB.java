@@ -15,8 +15,10 @@ public class CLIB {
             switch (opcion){
                 case 'A':
                     Almacenamiento.ventadeBoletos();
+                    break;
                 case 'B':
                     Almacenamiento.listadeVentas();
+                    break;
                 case 'S':
                     System.out.println("Fin del programa");
                     break;
