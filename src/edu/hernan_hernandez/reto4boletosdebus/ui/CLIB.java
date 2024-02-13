@@ -1,0 +1,33 @@
+package edu.hernan_hernandez.reto4boletosdebus.ui;
+
+import edu.hernan_hernandez.reto4boletosdebus.process.Almacenamiento;
+
+import java.util.Scanner;
+
+public class CLIB {
+    public static void main(){
+        Scanner scanner = new Scanner(System.in);
+        char opcion;
+
+        do{
+            MostrarMenu();
+            opcion = scanner.next().charAt(0);
+            switch (opcion){
+                case 'A':
+                    Almacenamiento.ventadeBoletos();
+                case 'B':
+                    Almacenamiento.listadeVentas();
+                case 'S':
+                    System.out.println("Fin del programa");
+                    break;
+            }
+        }while (opcion != 'S');
+    }
+
+    public static void MostrarMenu(){
+        System.out.println("---Sistema de registro de ventas---");
+        System.out.println("A. Realizar venta de boleto");
+        System.out.println("B. Mostrar datos de la lista de ventas");
+        System.out.println("S. Finalizar programa");
+    }
+}
