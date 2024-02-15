@@ -9,7 +9,9 @@ public class CLIB {
         Scanner scanner = new Scanner(System.in);
         char opcion;
 
+        //Bucle do-while para las opciones del menu
         do{
+            //Se manda a llamar al menu
             MostrarMenu();
             opcion = scanner.next().charAt(0);
             switch (opcion){
@@ -26,6 +28,7 @@ public class CLIB {
         }while (opcion != 'S');
     }
 
+    //Aqui es donde empieza el programa
     public static void MostrarMenu(){
         System.out.println("---Sistema de registro de ventas---");
         System.out.println("A. Realizar venta de boleto");
