@@ -4,6 +4,8 @@ import edu.hernan_hernandez.evidencia1.process.Registro;
 
 import java.util.Scanner;
 
+import static edu.hernan_hernandez.evidencia1.process.Registro.Medicamento.registronombre;
+
 public class CLIF {
     static Scanner scanner = new Scanner(System.in);
     public static void MostrarMenu() {
@@ -32,7 +34,7 @@ public class CLIF {
             opcion = scanner.nextLine().charAt(0);
             switch (opcion) {
                 case 'A':
-                    Registro.Medicamento();
+                    registronombre();
                     break;
                 case 'B':
                     System.out.println("desarrollo");
