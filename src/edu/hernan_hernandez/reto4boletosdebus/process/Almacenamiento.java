@@ -52,7 +52,7 @@ public class Almacenamiento {
         String nombreComprador = scanner.nextLine();
         System.out.println("Ingrese la cantidad de boletos a comprar:");
         int cantidadBoletos = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea
+        scanner.nextLine();
 
         String[] nombresPasajeros = new String[cantidadBoletos - 1];
         for (int i = 0; i < cantidadBoletos - 1; i++) {
@@ -111,7 +111,7 @@ public class Almacenamiento {
     public static int calcularTotalPasajeros() {
         int totalPasajeros = 0;
         for (Venta venta : ventas) {
-            totalPasajeros += venta.getNombresPasajeros().length + 1; // Se suma 1 por el comprador
+            totalPasajeros += venta.getNombresPasajeros().length + 1;
         }
         return totalPasajeros;
     }
