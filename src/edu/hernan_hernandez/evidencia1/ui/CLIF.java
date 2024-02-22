@@ -2,19 +2,22 @@ package edu.hernan_hernandez.evidencia1.ui;
 
 import edu.hernan_hernandez.evidencia1.process.Registro;
 
+import java.util.ArrayList;
 import java.util.Scanner;
-
-import static edu.hernan_hernandez.evidencia1.process.Registro.Medicamento.registronombre;
 
 public class CLIF {
     static Scanner scanner = new Scanner(System.in);
+    private static ArrayList<Registro.Medicamento> listaMedicamentos;
+
     public static void MostrarMenu() {
 
+        //Agregando el usuario ya establecido
         String nombreUsuarioCorrecto = "AL03100109";
         String contraseñaCorrecta = "03100109";
         String nombreUsuario;
         String contraseña;
 
+        //Proceso para ingresar con el usuario
         do {
             System.out.print("Ingrese su nombre de usuario: ");
             nombreUsuario = scanner.nextLine();
@@ -28,16 +31,17 @@ public class CLIF {
 
         System.out.println("Inicio de sesión exitoso. Bienvenido, " + nombreUsuario + "!");
 
+        //Aqui comienza el menu
         char opcion;
         do {
             menu();
             opcion = scanner.nextLine().charAt(0);
             switch (opcion) {
                 case 'A':
-                    registronombre();
+                    Registro.registroMedicamentos();
                     break;
                 case 'B':
-                    System.out.println("desarrollo");
+                    Registro.generarReporte(nombreUsuario);
                     break;
             }
         } while (opcion != 'B');
