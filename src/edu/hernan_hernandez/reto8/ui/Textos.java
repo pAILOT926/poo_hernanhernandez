@@ -1,6 +1,12 @@
 package edu.hernan_hernandez.reto8.ui;
 
 public class Textos {
+    /**
+     * Esta clase sirve para realizar lo siquiente:
+     * Crear los strings para los textos.
+     **/
+    public String NUMEROUNO;
+    public String NUMERODOS;
     public String OPERACION;
     public String SUMA;
     public String RESTA;
@@ -18,6 +24,12 @@ public class Textos {
     public String NOLOGARITMOCERO;
 
     public Textos(){
+        /**
+         * Esta clase sirve para realizar lo siquiente:
+         * Darle el significado a las variables.
+         **/
+        NUMEROUNO = "Enter the first number:";
+        NUMERODOS = "Enter the second number:";
         OPERACION = "Select the operation to perform:\n" +
                 "1. Sum\n" +
                 "2. Subtraction\n" +

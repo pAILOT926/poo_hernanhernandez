@@ -3,6 +3,12 @@ package edu.hernan_hernandez.reto8.ui;
 public class Esp extends Textos{
 
     public Esp() {
+        /**
+         * Esta clase sirve para realizar lo siquiente:
+         * Darle el significado a las variables en español.
+         **/
+        NUMEROUNO = "Ingrese el primer número:";
+        NUMERODOS = "Ingrese el segundo número:";
         OPERACION = "Seleccione la operación a realizar:\n" +
                 "1. Suma\n" +
                 "2. Resta\n" +

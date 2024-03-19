@@ -2,6 +2,12 @@ package edu.hernan_hernandez.reto8.ui;
 
 public class Eng extends Textos{
     public Eng(){
+            /**
+             * Esta clase sirve para realizar lo siquiente:
+             * Darle el significado a las variables en ingles.
+             **/
+            NUMEROUNO = "Enter the first number:";
+            NUMERODOS = "Enter the second number:";
             OPERACION = "Select the operation to perform:\n" +
                     "1. Sum\n" +
                     "2. Subtraction\n" +

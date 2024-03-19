@@ -1,5 +1,8 @@
 package edu.hernan_hernandez.reto8.process;
 
+import edu.hernan_hernandez.reto8.ui.Eng;
+import edu.hernan_hernandez.reto8.ui.Textos;
+
 public class OperacionesENG {
     /**
      * Esta clase sirve para realizar los siguientes calculos:
@@ -40,8 +43,9 @@ public class OperacionesENG {
      * Division de dos nuemros
      **/
     public static double division(double num1, double num2) {
+        Textos textos = new Eng();
         if (num2 == 0) {
-            System.out.println("No se puede dividir por cero.");
+            System.out.println(textos.NODIVIDIRCERO);
             return Double.NaN;
         }
 
@@ -66,8 +70,9 @@ public class OperacionesENG {
      * Modulo de dos nuemros
      **/
     public static double modulo(double num1, double num2) {
+        Textos textos = new Eng();
         if (num2 == 0) {
-            System.out.println("No se puede calcular el módulo con cero.");
+            System.out.println(textos.NOMODULOCERO);
             return Double.NaN;
         }
 
@@ -115,8 +120,9 @@ public class OperacionesENG {
      *Raiz cuadrada de un nuemro
      **/
     public static double raizCuadrada(double num) {
+        Textos textos = new Eng();
         if (num < 0) {
-            System.out.println("No se puede calcular la raíz cuadrada de un número negativo.");
+            System.out.println(textos.NORAIZCERO);
             return Double.NaN;
         }
 
@@ -139,8 +145,9 @@ public class OperacionesENG {
      *Logaritmo natural de un nuemro
      **/
     public static double logaritmoNatural(double num) {
+        Textos textos = new Eng();
         if (num <= 0) {
-            System.out.println("No se puede calcular el logaritmo de cero o números negativos.");
+            System.out.println(textos.NOLOGARITMOCERO);
             return Double.NaN;
         }
 
