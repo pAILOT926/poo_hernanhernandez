@@ -1,12 +1,13 @@
 package edu.hernan_hernandez.evidencia2.ui;
 
 import edu.hernan_hernandez.evidencia2.process.ArticulosESP;
+
 import java.util.List;
 import java.util.Scanner;
 
-public class CLITESP {
+public class CLITENG {
     public static void sesion() {
-        Textos textos = new ESP();
+        Textos textos = new ENG();
         //Inicio de sesion
         Scanner scanner = new Scanner(System.in);
         System.out.println(textos.INICIO_SESION);
